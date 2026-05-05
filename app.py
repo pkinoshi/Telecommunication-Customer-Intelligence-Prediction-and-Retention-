@@ -7,6 +7,7 @@ from dice_ml import Dice
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import warnings
+import skearn
 warnings.filterwarnings("ignore")
 
 # ── Page config ──────────────────────────────────────────────────────────────
