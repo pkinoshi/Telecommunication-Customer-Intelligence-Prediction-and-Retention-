@@ -6,7 +6,7 @@ xgboost==2.0.3
  
 # Data
 numpy==1.26.4
-pandas==1.9.9
+pandas==1.5.3
  
 # Explainability
 dice-ml==0.11
