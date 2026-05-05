@@ -1,21 +1,21 @@
 # Core ML
-scikit-learn==1.6.1
-imbalanced-learn==0.12.4
-joblib==1.4.2
-xgboost==2.0.3
+scikit-learn
+imbalanced-learn
+joblib
+xgboost
  
 # Data
-numpy==1.26.4
-pandas==2.2.2
+numpy
+pandas
  
 # Explainability
-dice-ml==0.12
-shap==0.45.1
-category-encoders==2.6.3
+dice-ml
+shap
+category-encoders
  
 # Visualisation
-matplotlib==3.9.0
+matplotlib
  
 # App framework
-streamlit==1.32.0
-pillow==10.4.0
+streamlit
+pillow
