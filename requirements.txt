@@ -15,7 +15,7 @@ streamlit
 pillow
 
 # Core ML
-scikit-learn
+scikit-learn==1.6.1
 imbalanced-learn
 joblib
 xgboost
