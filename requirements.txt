@@ -18,3 +18,4 @@ matplotlib==3.9.0
  
 # App framework
 streamlit==1.32.0
+pillow==10.4.0
