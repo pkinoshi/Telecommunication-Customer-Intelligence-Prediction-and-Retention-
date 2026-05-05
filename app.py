@@ -7,7 +7,6 @@ from dice_ml import Dice
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import warnings
-from helpers import churn_model_pipeline, df_cleaned_raw, target_encoder
 warnings.filterwarnings("ignore")
 
 # ── Page config ──────────────────────────────────────────────────────────────
