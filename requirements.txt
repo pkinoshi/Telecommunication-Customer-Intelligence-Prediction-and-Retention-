@@ -1,9 +1,9 @@
 # Data
 numpy
-pandas
+pandas==2.2.2
  
 # Explainability
-dice-ml
+dice-ml==0.12
 shap
 category-encoders
  
