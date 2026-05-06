@@ -6,16 +6,16 @@ import dice_ml
 from dice_ml import Dice
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
+import warnings
+warnings.filterwarnings("ignore")
 
-
-from sklearn.preprocessing import FunctionTransformer
+# --- Add your custom mapping logic here ---
+from sklearn.preprocessing import FunctionTransformer, StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
-from sklearn.preprocessing import StandardScaler
 from imblearn.over_sampling import SMOTE
 
-# --- Mappings dictionary ---
 mappings2 = {
     'gender': {'Female': 0, 'Male': 1},
     'SeniorCitizen': {'No': 0, 'Yes': 1},
@@ -40,7 +40,6 @@ mappings2 = {
     }
 }
 
-# --- Custom mapping function ---
 def apply_mappings(X):
     X = X.copy()
     for col, mapping in mappings2.items():
