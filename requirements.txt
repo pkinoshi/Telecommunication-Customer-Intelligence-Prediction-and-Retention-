@@ -1,9 +1,9 @@
 # Data
 numpy
-pandas==2.2.2
+pandas
  
 # Explainability
-dice-ml==0.12
+dice-ml
 shap
 category-encoders
  
@@ -15,7 +15,7 @@ streamlit
 pillow
 
 # Core ML
-scikit-learn==1.7.1
+scikit-learn
 imbalanced-learn
 joblib
 xgboost
