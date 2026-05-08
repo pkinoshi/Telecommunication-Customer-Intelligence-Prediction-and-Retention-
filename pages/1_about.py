@@ -3,7 +3,7 @@ from ui.styles import inject_styles
 
 inject_styles()
 
-st.markdown("# 📖 About This Project")
+st.markdown("# About This Project")
 st.markdown("---")
 
 # ── Hero summary ──────────────────────────────────────────────────────────────
@@ -45,13 +45,13 @@ st.markdown("""
 st.markdown("---")
 
 # ── Problem & motivation ──────────────────────────────────────────────────────
-st.markdown("## 🎯 Why This Exists")
+st.markdown("## Why This Exists")
 
 c1, c2 = st.columns(2)
 with c1:
     st.markdown("""
     <div class="metric-card" style="border-top:3px solid #f87171">
-    <h4 style="color:#f87171;margin:0 0 10px">😟 The Business Problem</h4>
+    <h4 style="color:#f87171;margin:0 0 10px">The Business Problem</h4>
     <p style="color:#94a3b8;font-size:0.88rem;line-height:1.75;margin:0 0 12px">
     Acquiring a new customer costs <strong style="color:#fca5a5">5–7×</strong>
     more than keeping an existing one. In telecoms — where switching is cheap,
@@ -133,19 +133,19 @@ st.markdown("---")
 st.markdown("## Tech Stack")
 
 stack = [
-    ("🐍", "Python 3.11",      "Core language"),
-    ("🎈", "Streamlit",         "Multi-page web app framework"),
-    ("🤖", "scikit-learn",      "Pipeline, preprocessing, Logistic Regression"),
-    ("⚖️", "imbalanced-learn",  "SMOTE inside the pipeline"),
-    ("🎲", "DiCE-ml",           "Counterfactual explanation generation"),
-    ("📊", "SHAP",              "Shapley-value feature attribution"),
-    ("🚀", "XGBoost",           "Evaluated but not selected"),
-    ("🐼", "pandas / NumPy",    "Data wrangling & numeric ops"),
-    ("💾", "joblib",            "Model serialisation to disk"),
+    ( "Python 3.11",      "Core language"),
+    ("Streamlit",         "Multi-page web app framework"),
+    ("scikit-learn",      "Pipeline, preprocessing, Logistic Regression"),
+    ("imbalanced-learn",  "SMOTE inside the pipeline"),
+    ("DiCE-ml",           "Counterfactual explanation generation"),
+    ("SHAP",              "Shapley-value feature attribution"),
+    ("XGBoost",           "Evaluated but not selected"),
+    ("pandas / NumPy",    "Data wrangling & numeric ops"),
+    ("joblib",            "Model serialisation to disk"),
 ]
 cols = st.columns(3)
-for i, (icon, name, role) in enumerate(stack):
-    with cols[i % 3]:
+for i, (name, role) in enumerate(stack):
+    with cols[i % 2]:
         st.markdown(f"""
         <div style="background:#1e2130;border:1px solid #2a2d3e;border-radius:10px;
                     padding:12px 14px;margin-bottom:10px;display:flex;gap:12px;align-items:center">
