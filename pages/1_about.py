@@ -35,7 +35,7 @@ st.markdown("""
             </div>
             <div style="background:rgba(74,222,128,0.08);border:1px solid rgba(74,222,128,0.25);
                         border-radius:10px;padding:12px 16px;text-align:center">
-                <div style="color:#4ade80;font-size:1.6rem;font-weight:800">~85 %</div>
+                <div style="color:#4ade80;font-size:1.6rem;font-weight:800">~84 %</div>
                 <div style="color:#64748b;font-size:0.78rem">ROC-AUC</div>
             </div>
         </div>
