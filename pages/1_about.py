@@ -149,7 +149,7 @@ for i, (name, role) in enumerate(stack):
         st.markdown(f"""
         <div style="background:#1e2130;border:1px solid #2a2d3e;border-radius:10px;
                     padding:12px 14px;margin-bottom:10px;display:flex;gap:12px;align-items:center">
-            #<span style="font-size:1.5rem">{icon}</span>
+            
             <div>
                 <div style="color:#e2e8f0;font-weight:600;font-size:0.88rem">{name}</div>
                 <div style="color:#64748b;font-size:0.77rem;margin-top:2px">{role}</div>
