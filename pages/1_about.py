@@ -133,15 +133,15 @@ st.markdown("---")
 st.markdown("## 🛠️ Tech Stack")
 
 stack = [
-    ("Python 3.11",      "Core language"),
-    ("Streamlit",         "Multi-page web app framework"),
-    ("scikit-learn",      "Pipeline, preprocessing, Logistic Regression"),
-    ("imbalanced-learn",  "SMOTE inside the pipeline"),
-    ("DiCE-ml",           "Counterfactual explanation generation"),
-    ("SHAP",              "Shapley-value feature attribution"),
-    ("XGBoost",           "Evaluated but not selected"),
-    ("pandas / NumPy",    "Data wrangling & numeric ops"),
-    ("joblib",            "Model serialisation to disk"),
+    ("","Python 3.11",      "Core language"),
+    (""."Streamlit",         "Multi-page web app framework"),
+    ("","scikit-learn",      "Pipeline, preprocessing, Logistic Regression"),
+    ("","imbalanced-learn",  "SMOTE inside the pipeline"),
+    ("","DiCE-ml",           "Counterfactual explanation generation"),
+    ("","SHAP",              "Shapley-value feature attribution"),
+    ("","XGBoost",           "Evaluated but not selected"),
+    ("","pandas / NumPy",    "Data wrangling & numeric ops"),
+    ("","joblib",            "Model serialisation to disk"),
 ]
 cols = st.columns(3)
 for i, (icon, name, role) in enumerate(stack):
