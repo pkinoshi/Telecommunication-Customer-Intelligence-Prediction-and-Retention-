@@ -172,22 +172,18 @@ No ML logic in UI files. No UI logic in ML files. No hard-coded constants anywhe
 
 st.code("""
 churn_app/
-├── app.py                    ← Home page + page config (must be here only)
-├── config.py                 ← Every constant: features, bounds, file paths, DiCE config
-├── model.py                  ← ML only: load artifacts, predict, run DiCE. Zero Streamlit imports.
-├── requirements.txt
+├── app.py                    ← Home page + page config. Customer form → prediction → counterfactuals
+├── churn_model_pipeline.pkl  ← The pipeline used in DiCE
+├── target_encoder.pkl        ← The encoder used to encode churn status
+├── mappings.py               ← The mapper used with the Function Transformer
+├── requirements.txt          
 │
 ├── pages/
-│   ├── 1_Predict.py          ← Customer form → prediction → counterfactuals
-│   ├── 2_Methodology.py      ← Data science walkthrough (this methodology page)
-│   └── 3_About.py            ← This page
+│   ├── 1_about.py            ← This page 
+│   └── 2_Methodology.py      ← Data science walkthrough (this methodology page)            
 │
 └── ui/
-    ├── __init__.py
-    ├── styles.py             ← All CSS in one place. inject_styles() called once per page.
-    ├── sidebar.py            ← Form rendering → returns plain inputs dict + controls
-    ├── results.py            ← Verdict banner, probability gauge, profile summary expander
-    └── counterfactuals.py    ← DiCE scenario cards + no-churn retention tip
+    └── styles.py             ← All CSS in one place. inject_styles() called once per page
 """)
 
 st.markdown("---")
