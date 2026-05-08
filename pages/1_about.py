@@ -165,7 +165,7 @@ st.markdown("""
 <div class="metric-card">
 <p style="color:#94a3b8;font-size:0.85rem;margin:0 0 14px">
 The app is fully modularised. Each file has one responsibility.
-No ML logic in UI files. No UI logic in ML files. No hard-coded constants anywhere except <code>config.py</code>.
+No ML logic in UI files. No UI logic in ML files. No hard-coded constants anywhere.
 </p>
 </div>
 """, unsafe_allow_html=True)
@@ -208,7 +208,7 @@ faqs = [
      "0.5 is the standard default. In practice the optimal threshold depends on the cost of false positives (wasted retention offers) vs false negatives (lost customers). If retaining a customer is worth more than the cost of a false alarm, the threshold should be lowered to capture more at-risk customers."),
 
     ("Can I retrain the model on my own data?",
-     "Yes — the notebook is fully reproducible. Replace the CSV with your own customer data, ensure the column names match config.py, retrain, export the pkl files, and the app will use your model automatically. Update FEATURE_OPTIONS in config.py if your categories differ."),
+     "Yes — the notebook is fully reproducible. Replace the CSV with your own customer data, retrain, export the pkl files, and the app will use your model automatically. Update FEATURE_OPTIONS in config.py if your categories differ."),
 
     ("Why Logistic Regression and not XGBoost?",
      "XGBoost marginally outperforms Logistic Regression on raw accuracy metrics. However, Logistic Regression was selected because: (1) its coefficients are directly interpretable, (2) SHAP's LinearExplainer gives exact (not approximate) Shapley values, and (3) DiCE counterfactuals are more stable and faster on linear models."),
