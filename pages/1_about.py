@@ -3,7 +3,7 @@ from ui.styles import inject_styles
 
 inject_styles()
 
-st.markdown("# 📖 About This Project")
+st.markdown("# About This Project")
 st.markdown("---")
 
 # ── Hero summary ──────────────────────────────────────────────────────────────
@@ -21,10 +21,10 @@ st.markdown("""
                 needed to retain them — all without requiring any technical knowledge from the user.
             </p>
             <div>
-                <span class="stat-pill">🤖 Logistic Regression</span>
-                <span class="stat-pill">🎲 DiCE Counterfactuals</span>
-                <span class="stat-pill">📊 SHAP Explainability</span>
-                <span class="stat-pill">🎈 Streamlit</span>
+                <span class="stat-pill">Logistic Regression</span>
+                <span class="stat-pill">DiCE Counterfactuals</span>
+                <span class="stat-pill">SHAP Explainability</span>
+                <span class="stat-pill">Streamlit</span>
             </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:10px;min-width:180px">
@@ -45,13 +45,13 @@ st.markdown("""
 st.markdown("---")
 
 # ── Problem & motivation ──────────────────────────────────────────────────────
-st.markdown("## 🎯 Why This Exists")
+st.markdown("## Why This Exists")
 
 c1, c2 = st.columns(2)
 with c1:
     st.markdown("""
     <div class="metric-card" style="border-top:3px solid #f87171">
-    <h4 style="color:#f87171;margin:0 0 10px">😟 The Business Problem</h4>
+    <h4 style="color:#f87171;margin:0 0 10px">The Business Problem</h4>
     <p style="color:#94a3b8;font-size:0.88rem;line-height:1.75;margin:0 0 12px">
     Acquiring a new customer costs <strong style="color:#fca5a5">5–7×</strong>
     more than keeping an existing one. In telecoms — where switching is cheap,
@@ -68,7 +68,7 @@ with c1:
 with c2:
     st.markdown("""
     <div class="metric-card" style="border-top:3px solid #4ade80">
-    <h4 style="color:#4ade80;margin:0 0 10px">✅ What This App Does Differently</h4>
+    <h4 style="color:#4ade80;margin:0 0 10px">What This App Does Differently</h4>
     <p style="color:#94a3b8;font-size:0.88rem;line-height:1.75;margin:0 0 12px">
     Most churn tools stop at a probability score. This platform goes two steps further:
     </p>
@@ -97,15 +97,15 @@ st.markdown("## 🗺️ How to Use the App")
 steps = [
     ("1", "#6366f1", "🏠 Start on the Home page",
      "Read the churn driver summary to understand what signals the model responds to most."),
-    ("2", "#8b5cf6", "🎯 Go to the Predict page",
+    ("2", "#8b5cf6", "Go to the Predict page",
      "Click '1 Predict' in the sidebar. The customer input form appears on the left."),
-    ("3", "#a78bfa", "📋 Fill in the customer profile",
+    ("3", "#a78bfa", "Fill in the customer profile",
      "All fields use plain dropdowns and sliders — no numeric codes, no encoding required. "
      "Demographics, account details, and service subscriptions are all covered."),
-    ("4", "#c4b5fd", "🔍 Click Run Prediction",
+    ("4", "#c4b5fd", "Click Run Prediction",
      "The model scores the profile instantly. You'll see a High/Low risk verdict and an exact "
      "churn probability percentage."),
-    ("5", "#e9d5ff", "💡 Review retention scenarios (if High Risk)",
+    ("5", "#e9d5ff", "Review retention scenarios (if High Risk)",
      "DiCE generates 2–5 'what-if' scenarios automatically. Each shows only the features that "
      "need to change, with the original value struck through and the recommended value in colour."),
     ("6", "#a78bfa", "🔬 Explore the Methodology page",
@@ -133,15 +133,15 @@ st.markdown("---")
 st.markdown("## 🛠️ Tech Stack")
 
 stack = [
-    ("🐍", "Python 3.11",      "Core language"),
-    ("🎈", "Streamlit",         "Multi-page web app framework"),
-    ("🤖", "scikit-learn",      "Pipeline, preprocessing, Logistic Regression"),
-    ("⚖️", "imbalanced-learn",  "SMOTE inside the pipeline"),
-    ("🎲", "DiCE-ml",           "Counterfactual explanation generation"),
-    ("📊", "SHAP",              "Shapley-value feature attribution"),
-    ("🚀", "XGBoost",           "Evaluated but not selected"),
-    ("🐼", "pandas / NumPy",    "Data wrangling & numeric ops"),
-    ("💾", "joblib",            "Model serialisation to disk"),
+    ("Python 3.11",      "Core language"),
+    ("Streamlit",         "Multi-page web app framework"),
+    ("scikit-learn",      "Pipeline, preprocessing, Logistic Regression"),
+    ("imbalanced-learn",  "SMOTE inside the pipeline"),
+    ("DiCE-ml",           "Counterfactual explanation generation"),
+    ("SHAP",              "Shapley-value feature attribution"),
+    ("XGBoost",           "Evaluated but not selected"),
+    ("pandas / NumPy",    "Data wrangling & numeric ops"),
+    ("joblib",            "Model serialisation to disk"),
 ]
 cols = st.columns(3)
 for i, (icon, name, role) in enumerate(stack):
