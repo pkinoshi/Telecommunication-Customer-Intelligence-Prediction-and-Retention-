@@ -189,7 +189,6 @@ churn_app/
     ├── results.py            ← Verdict banner, probability gauge, profile summary expander
     └── counterfactuals.py    ← DiCE scenario cards + no-churn retention tip
 """)
-""", unsafe_allow_html=True)
 
 st.markdown("---")
 
