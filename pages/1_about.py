@@ -167,17 +167,10 @@ st.markdown("""
 The app is fully modularised. Each file has one responsibility.
 No ML logic in UI files. No UI logic in ML files. No hard-coded constants anywhere except <code>config.py</code>.
 </p>
+</div>
+""", unsafe_allow_html=True)
 
-<pre style="
-color:#94a3b8;
-font-size:0.82rem;
-line-height:1.8;
-margin:0;
-background:transparent;
-overflow-x:auto;
-white-space:pre;
-font-family:monospace;
-">
+st.code("""
 churn_app/
 ├── app.py                    ← Home page + page config (must be here only)
 ├── config.py                 ← Every constant: features, bounds, file paths, DiCE config
@@ -195,8 +188,7 @@ churn_app/
     ├── sidebar.py            ← Form rendering → returns plain inputs dict + controls
     ├── results.py            ← Verdict banner, probability gauge, profile summary expander
     └── counterfactuals.py    ← DiCE scenario cards + no-churn retention tip
-</pre>
-</div>
+""")
 """, unsafe_allow_html=True)
 
 st.markdown("---")
